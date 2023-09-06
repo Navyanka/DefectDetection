@@ -26,17 +26,22 @@ accurately.
 features within the input images. Conv2D layers use filters/kernels to scan the images
 and create feature maps, highlighting essential visual patterns relevant to identifying
 defects.
+
+
 **b. Maxpooling Layers:** After each Conv2D layer, Maxpooling layers were applied.
 Maxpooling is a downsampling technique that reduces the spatial dimensions of the
 feature maps while retaining the most relevant information. It helps reduce computational complexity and makes the network more robust to slight variations in input.
+
 **c. ReLU Activation Function:** The Rectified Linear Unit (ReLU) activation function
 was used. ReLU is commonly used in CNNs as it introduces non-linearity, allowing
 the network to learn complex patterns and relationships in the data. It helps in avoiding
 vanishing gradient problems and accelerates the convergence of the training process.
+
 **d. Dense Layers:** After the Conv2D and Maxpooling layers, Dense layers (also known
 as fully connected layers) were added. These layers help in combining the features
 learned from the convolutional layers and making decisions based on these features.
 Dense layers can help learn high-level abstractions and representations of the data.
+
 **e. Softmax Layer:** At the end of the network, a Softmax layer was added. Softmax
 is used for multi-class classification problems. It converts the final layer’s raw outputs
 (logits) into probability values representing the likelihood of each class. In this case,
